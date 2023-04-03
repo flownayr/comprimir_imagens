@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Redimensionar e Comprimir Imagem</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-HMx7VJjzGZ3Jc5fzIuH9XbWQ4pdK7tH+oWXx26oVpZKjS0Ll1I+kOVlD9iWgn0Qm4t78k4tLOHbbF8iAoeCwkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-warning bg-light mx-auto">
+		<div class="container d-flex justify-content-center align-items-center" style="background-color: #fff;"><a class="navbar-brand" href="https://midiasudoeste.com.br/">Mídia Sudoeste</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse text-center" id="navbarNav">
+			<ul class="navbar-nav mx-auto">
+			</ul>
+		</div></div>
+	</nav>
+
+	<div class="container mt-5" style="background-color: #fff;">
+		<h1 class="text-center mb-5">Redimensionar e Comprimir Imagem</h1>
+		<form action="process.php" method="post" enctype="multipart/form-data">
+			<div class="mb-3">
+				<label for="image-input" class="form-label">Selecione uma imagem para enviar:</label>
+				<div class="input-group">
+					<input type="file" name="image" class="form-control" id="image-input" aria-describedby="input-group-append">
+					<button class="btn btn-outline-secondary" type="button" id="input-group-append">Escolher arquivo</button>
+				</div>
+				<span class="form-text" data-js-label>Nenhum arquivo selecionado</span>
+			</div>
+			<button type="submit" class="btn btn-primary">Enviar</button>
+		</form>
+	</div>
+
+<footer class="bg-dark text-light py-3 fixed-bottom">
+  <div class="container text-center">
+    Desenvolvido com amor e café utilizando I.A por Ryan Marcos<br>Projeto de expensão de portfólio pessoal<br>Ryan Marcos Stanga de Lara &copy; Copyright 2023
+  </div>
+</footer>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>
